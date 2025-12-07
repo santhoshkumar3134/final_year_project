@@ -8,53 +8,71 @@ This document explains how all teammates should access, update, and maintain the
 -----------------------------------------
 Before working on the project, clone the repository:
 
-    git clone <repository-url>
+[COMMAND]
+git clone <repository-url>
+[/COMMAND]
 
 Move into the project folder:
 
-    cd project-folder-name
+[COMMAND]
+cd project-folder-name
+[/COMMAND]
 
 
 2. CREATE YOUR OWN BRANCH (HIGHLY RECOMMENDED)
 ----------------------------------------------
 Each teammate should work on a separate branch:
 
-    git checkout -b your-branch-name
+[COMMAND]
+git checkout -b your-branch-name
+[/COMMAND]
 
 Examples:
 
-    git checkout -b frontend-santhosh
-    git checkout -b backend-sharan
-    git checkout -b ml-rakesh
+[COMMAND]
+git checkout -b frontend-santhosh
+git checkout -b backend-sharan
+git checkout -b ml-rakesh
+[/COMMAND]
 
 
 3. PULL BEFORE YOU START WORKING (VERY IMPORTANT)
 -------------------------------------------------
 Always update your local code before new changes:
 
-    git pull origin main
+[COMMAND]
+git pull origin main
+[/COMMAND]
 
 If you're on another branch:
 
-    git pull origin your-branch-name
+[COMMAND]
+git pull origin your-branch-name
+[/COMMAND]
 
 
 4. ADDING YOUR CHANGES
 -----------------------
 Add ALL modified files:
 
-    git add .
+[COMMAND]
+git add .
+[/COMMAND]
 
 Or add specific files:
 
-    git add filename.py
+[COMMAND]
+git add filename.py
+[/COMMAND]
 
 
 5. COMMIT YOUR CHANGES
 -----------------------
 Write a meaningful commit message:
 
-    git commit -m "Added ML model training script"
+[COMMAND]
+git commit -m "Added ML model training script"
+[/COMMAND]
 
 Examples of good commit messages:
 - Updated UI for loan eligibility form
@@ -66,82 +84,92 @@ Examples of good commit messages:
 -------------------------------
 Push your updates to GitHub:
 
-    git push origin your-branch-name
+[COMMAND]
+git push origin your-branch-name
+[/COMMAND]
 
 
 7. CREATING A PULL REQUEST (PR)
 -------------------------------
 After completing your feature:
 
-1. Go to GitHub → Pull Requests → New Pull Request
-2. Select your branch → compare with main
-3. Add a description of changes
-4. Submit the PR
-5. Team lead reviews & merges
+1. Go to GitHub → Pull Requests → New Pull Request  
+2. Select your branch → compare with main  
+3. Add a description of changes  
+4. Submit the PR  
+5. Team lead reviews & merges  
 
 
 8. HANDLING MERGE CONFLICTS
 ----------------------------
 If Git shows a conflict, open the file and look for:
 
-    <<<<<<< HEAD
-    Your code
-    =======
-    Other teammate's code
-    >>>>>>> main
+<<<<<<<<< HEAD  
+Your code  
+=========  
+Other teammate's code  
+>>>>>>>>> main  
 
-Remove the markers, keep the correct version, then:
+Remove the markers, keep the correct version, then run:
 
-    git add .
-    git commit -m "Resolved merge conflicts"
-    git push origin your-branch-name
+[COMMAND]
+git add .
+git commit -m "Resolved merge conflicts"
+git push origin your-branch-name
+[/COMMAND]
 
 
 9. UPDATING YOUR BRANCH AFTER MERGE
 ------------------------------------
 After your PR is merged:
 
-    git checkout main
-    git pull origin main
+[COMMAND]
+git checkout main
+git pull origin main
+[/COMMAND]
 
 To continue working on your branch:
 
-    git checkout your-branch-name
-    git merge main
+[COMMAND]
+git checkout your-branch-name
+git merge main
+[/COMMAND]
 
 
 10. FOLDER STRUCTURE GUIDELINES
 --------------------------------
-LoanLite project must follow this structure:
+Use this structure for the LoanLite project:
 
-    LoanLite/
-    ├── frontend/
-    ├── backend/
-    ├── ml-model/
-    ├── docs/
-    ├── README.md
-    ├── PROJECT_WORKFLOW_GUIDE.md
+LoanLite/  
+│── frontend/  
+│── backend/  
+│── ml-model/  
+│── docs/  
+│── README.md  
+│── PROJECT_WORKFLOW_GUIDE.md  
 
 
 11. BEST PRACTICES FOR TEAM COLLABORATION
 ------------------------------------------
-- Always pull before starting work
-- Never push directly to main
-- Use small commits with clear messages
-- Communicate before major updates
-- Always create separate branches for features
+- Always pull before starting work  
+- Never push directly to main  
+- Use small commits with clear messages  
+- Communicate before major updates  
+- Always create separate branches for features  
 
 
 12. QUICK REFERENCE COMMANDS
 -----------------------------
-    git clone <URL>
-    git pull origin main
-    git checkout -b branch-name
-    git add .
-    git commit -m "Message"
-    git push origin branch-name
+[COMMAND]
+git clone <URL>
+git pull origin main
+git checkout -b branch-name
+git add .
+git commit -m "Message"
+git push origin branch-name
+[/COMMAND]
 
 
 TEAMWORK = SMOOTH PROJECT + NO CODE CONFLICTS
 ----------------------------------------------
-Following this workflow ensures efficient team collaboration and prevents file overwrites, version issues, and merge conflicts.
+Following this workflow ensures efficient team collaboration and prevents merge issues.
