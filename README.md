@@ -12,3 +12,5 @@ The platform also integrates a **smart welfare-mapping engine** that identifies 
 A clean and intuitive UI guides users through document uploads, eKYC, status tracking, and digital verification. On the backend, bank managers receive AI-generated risk assessments, default probability scores, and recommendation dashboards to make confident and informed decisions. The system also includes **fraud detection layers** to flag anomalies in documents, identity mismatches, duplicate applications, and unusual transaction patterns.
 
 By combining automation, transparency, and intelligent scoring, LoanLite accelerates loan approvals, minimizes operational overhead, and promotes inclusive financial growth. It supports multiple loan types—personal, housing, education, and agricultural loans—making it a versatile solution for modern banking needs.
+
+
